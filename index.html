@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body class="page">
-    <div class="matrix">
+    <section class="matrix">
       <img class="matrix-img" src="./eisenhower-matrix.jpg">
       <a class="matrix-inf" href="https://goal-life.com/page/method/matrix-eisenhower">
         Want more details?
       </a>
-    </div>
-    <div class="tasks-container">
-      <p id="task-adding">
-        <label class="label" for="new-task">Add Item</label>
+    </section>
+    <section class="tasks-container">
+      <div id="task-adding">
+        <h3 class="tasks-head">Add Item</h3>
         <div class="new-task-wrapper">
           <input id="new-task"class="input task" type="text"><button class="button">Add</button>
         </div>
-      </p>
-      <h3 class="list-head">Todo</h3>
+      </div>
+      <h3 class="tasks-head">Todo</h3>
       <ul id="incomplete" class="tasks-list">
         <li class="tasks-item">
           <input type="checkbox" class="input">
@@ -37,7 +37,7 @@
           <button class="button delete"><img class="img-delete" src="./remove.svg"></button>
         </li>
       </ul>
-      <h3 class="list-head">Completed</h3>
+      <h3 class="tasks-head">Completed</h3>
       <ul id="completed" class="tasks-list">
         <li class="tasks-item">
           <input type="checkbox" class="input" checked>
@@ -47,7 +47,7 @@
           <button class="button delete"><img class="img-delete" src="./remove.svg"></button>
         </li>
       </ul>
-    </div>
+    </section>
     <script src="app.js"></script>
   </body>
 </html>
